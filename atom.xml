@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.magenius.site/"/>
-  <updated>2020-07-17T10:39:14.709Z</updated>
+  <updated>2020-08-06T07:25:47.407Z</updated>
   <id>http://www.magenius.site/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://www.magenius.site/post/3eeb.html"/>
-    <id>http://www.magenius.site/post/3eeb.html</id>
-    <published>2020-07-10T10:10:06.015Z</published>
-    <updated>2020-07-17T10:39:14.709Z</updated>
+    <title>Hexo之撰写文章</title>
+    <link href="http://www.magenius.site/post/9c3a.html"/>
+    <id>http://www.magenius.site/post/9c3a.html</id>
+    <published>2020-08-06T07:05:00.103Z</published>
+    <updated>2020-08-06T07:25:47.407Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;h1 id=&quot;Hexo之撰写文章&quot;&gt;&lt;a href=&quot;#Hexo之撰写文章&quot; class=&quot;headerlink&quot;
         
       
     
