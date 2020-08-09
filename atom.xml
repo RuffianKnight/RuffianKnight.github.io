@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.magenius.site/"/>
-  <updated>2020-08-06T07:25:47.407Z</updated>
+  <updated>2020-08-09T09:44:54.490Z</updated>
   <id>http://www.magenius.site/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>漫威电影观看顺序</title>
+    <link href="http://www.magenius.site/post/9664.html"/>
+    <id>http://www.magenius.site/post/9664.html</id>
+    <published>2020-08-09T09:43:26.000Z</published>
+    <updated>2020-08-09T09:44:54.490Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;漫威电影观看顺序&quot;&gt;&lt;a href=&quot;#漫威电影观看顺序&quot; class=&quot;headerlink&quot; title=&quot;漫威电影观看顺序&quot;&gt;&lt;/a&gt;漫威电影观看顺序&lt;/h1&gt;&lt;p&gt;​        &lt;/p&gt;
+&lt;p&gt;​        这几年
+        
+      
+    
+    </summary>
+    
+    
+      <category term="娱乐" scheme="http://www.magenius.site/categories/%E5%A8%B1%E4%B9%90/"/>
+    
+    
+      <category term="电影 漫威" scheme="http://www.magenius.site/tags/%E7%94%B5%E5%BD%B1-%E6%BC%AB%E5%A8%81/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo之撰写文章</title>
     <link href="http://www.magenius.site/post/9c3a.html"/>
     <id>http://www.magenius.site/post/9c3a.html</id>
-    <published>2020-08-06T07:05:00.103Z</published>
-    <updated>2020-08-06T07:25:47.407Z</updated>
+    <published>2020-08-06T06:13:44.000Z</published>
+    <updated>2020-08-06T07:46:52.221Z</updated>
     
     <summary type="html">
     
@@ -36,6 +64,10 @@
     </summary>
     
     
+      <category term="技术" scheme="http://www.magenius.site/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Hexo" scheme="http://www.magenius.site/tags/Hexo/"/>
     
   </entry>
   

@@ -230,20 +230,6 @@
                   <ul class="sub-menu">
                     
                       <li>
-                        <a href="/analytics">
-                          <i class="fa fa-line-chart" aria-hidden="true"></i>
-                          统计
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/tags">
-                          <i class="fa fa-tags" aria-hidden="true"></i>
-                          标签
-                        </a>
-                      </li>
-                    
-                      <li>
                         <a href="/categories/%E6%8A%80%E6%9C%AF/">
                           <i class="fa fa-code" aria-hidden="true"></i>
                           技术
@@ -251,9 +237,30 @@
                       </li>
                     
                       <li>
-                        <a href="/categories/%E7%94%9F%E6%B4%BB/">
+                        <a href="/categories/%E5%A8%B1%E4%B9%90/">
                           <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                          生活
+                          娱乐
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E8%B5%84%E6%BA%90/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          资源
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E9%9A%8F%E6%83%B3/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          随想
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags">
+                          <i class="fa fa-tags" aria-hidden="true"></i>
+                          标签
                         </a>
                       </li>
                     
@@ -425,20 +432,6 @@
           <ul class="sub-menu">
             
               <li>
-                <a href="/analytics">
-                  <i class="fa fa-line-chart" aria-hidden="true"></i>
-                  统计
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                  标签
-                </a>
-              </li>
-            
-              <li>
                 <a href="/categories/%E6%8A%80%E6%9C%AF/">
                   <i class="fa fa-code" aria-hidden="true"></i>
                   技术
@@ -446,9 +439,30 @@
               </li>
             
               <li>
-                <a href="/categories/%E7%94%9F%E6%B4%BB/">
+                <a href="/categories/%E5%A8%B1%E4%B9%90/">
                   <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                  生活
+                  娱乐
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E8%B5%84%E6%BA%90/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  资源
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E9%9A%8F%E6%83%B3/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  随想
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  标签
                 </a>
               </li>
             
@@ -606,7 +620,7 @@
       标签云</h1>
       <span class="cat-des">
         <p>
-          Tags 0</p>
+          Tags 2</p>
       </span>
     </header>
     <div id="main-part">
@@ -615,7 +629,7 @@
           <div class="tag-cloud-title">
           </div>
           <div class="tag-cloud-tags">
-          
+          <a href="/tags/Hexo/" style="font-size: 15px; color: #f66">Hexo</a> <a href="/tags/%E7%94%B5%E5%BD%B1-%E6%BC%AB%E5%A8%81/" style="font-size: 15px; color: #f66">电影 漫威</a>
           </div>
         </div>
 
@@ -628,6 +642,24 @@
                 <i class="fa fa-tags"></i>&nbsp;&nbsp; 标签
             </div>
             <div class="tag-chips">
+                
+                
+                <a href="/tags/Hexo/" title="Hexo: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Hexo" style="background-color: #F9EBEA;">Hexo
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%94%B5%E5%BD%B1-%E6%BC%AB%E5%A8%81/" title="电影 漫威: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="电影 漫威" style="background-color: #F5EEF8;">电影 漫威
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
@@ -706,6 +738,38 @@
 
 </style>
 
+        
+        <link rel="stylesheet" type="text/css" href="https://blinkfox.github.io/libs/jqcloud/jqcloud.css">
+<link rel="stylesheet" type="text/css" href="https://blinkfox.github.io/libs/aos/aos.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<script type="text/javascript" src="https://blinkfox.github.io/libs/aos/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div class="tag-title center-align">
+            <i class="fa fa-tags"></i>&nbsp;&nbsp; 标签云
+        </div>
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://blinkfox.github.io/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud( [{"text":"Hexo","weight":1,"link":"/tags/Hexo/"},{"text":"电影 漫威","weight":1,"link":"/tags/电影-漫威/"}], {
+        autoResize: true
+    });
+</script>
         
 
       
@@ -810,7 +874,7 @@
           <p style="font-family: 'Ubuntu', sans-serif;">
             <span style="color: #b9b9b9;padding-left: 20px;">
               <!-- 全网站字数统计wordcount -->
-              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">1.1k</span>字</span>
+              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">2.1k</span>字</span>
               <!-- 不蒜子网页计数器 -->
               
               <span style="padding-left: 20px;"><i class="fa fa-fire" aria-hidden="true" style="color: #ff9999;display:inline-block"></i><span id="busuanzi_container_site_pv">总访问量： <span id="busuanzi_value_site_pv" style="color:#ff9999;"></span>次</span>
