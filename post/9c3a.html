@@ -637,7 +637,7 @@
     <i class="fa fa-book"></i>
     <span class="post-meta-item-text">字数统计: </span>
     <!-- 安装插件npm install hexo-wordcount --save -->
-    <span class="post-count">1.2k字</span>
+    <span class="post-count">1.1k字</span>
   </span>
 </span>
 <span class="bull">
@@ -678,7 +678,7 @@
         <div class="entry-content">
           <h1 id="Hexo之撰写文章"><a href="#Hexo之撰写文章" class="headerlink" title="Hexo之撰写文章"></a>Hexo之撰写文章</h1><p>利用Hexo框架搭建一个属于自己的博客网站后，可以开始在自己的空间里注入自己的灵魂了。</p>
 <h2 id="一、创建文章"><a href="#一、创建文章" class="headerlink" title="一、创建文章"></a>一、创建文章</h2><p>在站点文件夹中打开 git bash，输入如下命令创建文章，其中 <code>title</code> 为文章的标题</p>
-<pre><code>$ hexo new "title"</code></pre><p>输入命令后，会在 <code>source/_post</code> 文件夹下生成一个文件，命名为：<code>title.md</code>。在这个文件中使用Markdown进行创作。</p>
+<pre><code>$ hexo new &quot;title&quot;</code></pre><p>输入命令后，会在 <code>source/_post</code> 文件夹下生成一个文件，命名为：<code>title.md</code>。在这个文件中使用Markdown进行创作。</p>
 <h2 id="二、编写文章"><a href="#二、编写文章" class="headerlink" title="二、编写文章"></a>二、编写文章</h2><h3 id="1、Markdown"><a href="#1、Markdown" class="headerlink" title="1、Markdown"></a>1、Markdown</h3><p>Markdown 是一种可以使用普通文本编辑器编写的 <strong>标记语言</strong>，通过简单的 <strong>标记语法</strong>，可以使普通文本内容具有一定的格式。当你开始使用它创作自己的第一篇文章的时候，可能会有一种相见恨晚的感觉。没错，我就是这样。</p>
 <p>如同初出江湖的少年需要一把自己用的趁手的兵器，使用Markdown写文章还需要一款简洁易用的编辑器——我用的是Typora。这里附上下载地址：<a href="https://www.typora.io/" target="_blank" rel="noopener">https://www.typora.io/</a></p>
 <p>我不会给任何人推荐任何东西，除非有人给我好处。不过显然没有人这么做，所以有需要的朋友建议自行百度 ”Markdown编辑器“。</p>
@@ -720,24 +720,24 @@ $$</code></pre><h4 id="（6）分割线"><a href="#（6）分割线" class="head
 -|-|-
 内容11|内容12
 内容21|内容22</code></pre><h4 id="（9）超链接"><a href="#（9）超链接" class="headerlink" title="（9）超链接"></a>（9）超链接</h4><p><strong>Markdown语法：</strong></p>
-<pre><code>方法一：[链接文字](链接地址 "链接描述")
-例如：[示例链接](https://www.example.com/ "示例链接")
+<pre><code>方法一：[链接文字](链接地址 &quot;链接描述&quot;)
+例如：[示例链接](https://www.example.com/ &quot;示例链接&quot;)
 
 方法二：&lt;链接地址&gt;
 例如：&lt;https://www.example.com/&gt;</code></pre><h4 id="（10）图片"><a href="#（10）图片" class="headerlink" title="（10）图片"></a>（10）图片</h4><p><strong>Markdown语法：</strong></p>
-<pre><code>![图片文字](图片地址 "图片描述")
-例如：![示例图片](https://www.example.com/example.PNG "示例图片")</code></pre><p>在 Hexo中 插入图片时，需按照以下的步骤进行设置</p>
+<pre><code>![图片文字](图片地址 &quot;图片描述&quot;)
+例如：![示例图片](https://www.example.com/example.PNG &quot;示例图片&quot;)</code></pre><p>在 Hexo中 插入图片时，需按照以下的步骤进行设置</p>
 <ol>
 <li><p>将 <strong>站点配置文件</strong> 中的 <code>post_asset_folder</code> 选项的值设置为 true</p>
 </li>
 <li><p>在站点文件夹中打开 git bash，输入命令 <code>npm install hexo-asset-image --save</code> 安装插件</p>
 </li>
 <li><p>这样，当使用 <code>hexo new title</code> 创建文章时，将同时在 <code>source/_post</code> 文件夹中生成一个与 title 同名的文件夹，我们只需将图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</p>
-<p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加图片 example.PNG，则可以在对应的文章中使用语句 <code>![示例图片](title/example.PNG "示例图片")</code> 添加图片</p>
+<p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加图片 example.PNG，则可以在对应的文章中使用语句 <code>![示例图片](title/example.PNG &quot;示例图片&quot;)</code> 添加图片</p>
 </li>
 </ol>
 <h3 id="3、高级设置"><a href="#3、高级设置" class="headerlink" title="3、高级设置"></a>3、高级设置</h3><h4 id="（1）模板设置"><a href="#（1）模板设置" class="headerlink" title="（1）模板设置"></a>（1）模板设置</h4><p>我们可以通过修改<code>/scaffolds/post.md</code>初始化自己的文章模板。</p>
-<p>当使用命令 <code>hexo new "title"</code> 时，Hexo 会根据 <code>/scaffolds/post.md</code> 对新文章进行初始化。</p>
+<p>当使用命令 <code>hexo new &quot;title&quot;</code> 时，Hexo 会根据 <code>/scaffolds/post.md</code> 对新文章进行初始化。</p>
 <p>比如：</p>
 <pre><code>title: {{ title }}
 date: {{ date }}
@@ -753,25 +753,7 @@ categories: category</code></pre><p><strong>注意</strong>：和配置文件中
 <p>使用 <code>&lt;!--more--&gt;</code> 标志可以精简显示，表示只会显示标志前面的内容。</p>
 <h2 id="三、部署发布"><a href="#三、部署发布" class="headerlink" title="三、部署发布"></a>三、部署发布</h2><p>在站点文件夹中打开 git bash，然后</p>
 <pre><code>$ hexo g -d</code></pre><p>参考原文：【1】<a href="https://blog.csdn.net/wsmrzx/article/details/81478945" target="_blank" rel="noopener">https://blog.csdn.net/wsmrzx/article/details/81478945</a>  “Hexo系列(五) 撰写文章”</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
         </div>
 
         <!-- .entry-content -->
@@ -1034,7 +1016,7 @@ wpac_init.push({widget: 'Rating', id: 23889});
           <p style="font-family: 'Ubuntu', sans-serif;">
             <span style="color: #b9b9b9;padding-left: 20px;">
               <!-- 全网站字数统计wordcount -->
-              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">2.1k</span>字</span>
+              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">2.3k</span>字</span>
               <!-- 不蒜子网页计数器 -->
               
               <span style="padding-left: 20px;"><i class="fa fa-fire" aria-hidden="true" style="color: #ff9999;display:inline-block"></i><span id="busuanzi_container_site_pv">总访问量： <span id="busuanzi_value_site_pv" style="color:#ff9999;"></span>次</span>
@@ -1051,7 +1033,7 @@ wpac_init.push({widget: 'Rating', id: 23889});
         <div class="footer-device">
           <p style="font-family: 'Ubuntu', sans-serif;">
               <span style="color: #b9b9b9;">
-                Copyright &copy; 2020
+                Copyright &copy; 2021
                 &nbsp;<a style="color: #ff9999;display:inline-block"> 雪碧纤维+ </a>
                 &nbsp;<i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> 
                 &nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank" style="color: #ff9999;display:inline-block">Hexo</a>
@@ -1064,7 +1046,7 @@ wpac_init.push({widget: 'Rating', id: 23889});
           <div id="footer-info" class="inner">
             <p style="font-family: 'Ubuntu', sans-serif;">
               <span style="color: #ff9999;">
-                晋ICP备20001136号
+                <a href="https://www.beian.miit.gov.cn" target="_blank" rel="noopener">晋ICP备20001136号</a>
               </span>
             </p>
           </div>

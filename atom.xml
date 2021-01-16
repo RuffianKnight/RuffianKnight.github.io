@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.magenius.site/"/>
-  <updated>2020-08-13T15:47:41.381Z</updated>
+  <updated>2021-01-15T08:11:58.135Z</updated>
   <id>http://www.magenius.site/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql数据库设计--外键设置中的CASCADE、NO ACTION、RESTRICT、SET NULL</title>
+    <link href="http://www.magenius.site/post/e209.html"/>
+    <id>http://www.magenius.site/post/e209.html</id>
+    <published>2020-08-28T02:49:32.617Z</published>
+    <updated>2021-01-15T08:11:58.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;title: Mysql数据库设计–外键设置中的CASCADE、NO ACTION、RESTRICT、SET NULL&lt;br&gt;photos: &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>漫威电影观看顺序</title>
